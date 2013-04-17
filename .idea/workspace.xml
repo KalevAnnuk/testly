@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bbcb247-976b-4e05-ad7e-e1fa97625018" name="804555-48140483 Testide loendi leht" comment="Changes">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/Request.php" afterPath="$PROJECT_DIR$/classes/Request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/auth.php" afterPath="$PROJECT_DIR$/controllers/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/database.php" afterPath="$PROJECT_DIR$/classes/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/master_view.php" afterPath="$PROJECT_DIR$/views/master_view.php" />
+    <list default="true" id="9bbcb247-976b-4e05-ad7e-e1fa97625018" name="804555-48140483 Testide loendi leht" comment="Add default controller. Add redirect function.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testly.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.php" changelist="9bbcb247-976b-4e05-ad7e-e1fa97625018" time="1366113501271" ignored="false" />
-    <file path="/Dummy.txt" changelist="9bbcb247-976b-4e05-ad7e-e1fa97625018" time="1366183596447" ignored="false" />
+    <file path="/Dummy.txt" changelist="9bbcb247-976b-4e05-ad7e-e1fa97625018" time="1366187920181" ignored="false" />
     <file path="/Request.php" changelist="9bbcb247-976b-4e05-ad7e-e1fa97625018" time="1366187678061" ignored="false" />
     <file path="/test.php" changelist="3972e00d-2174-4137-b15f-fc090102ca00" time="1366019893056" ignored="false" />
     <file path="/.htaccess" changelist="3972e00d-2174-4137-b15f-fc090102ca00" time="1366022830658" ignored="false" />
@@ -22,6 +18,7 @@
     <file path="/auth.php" changelist="9bbcb247-976b-4e05-ad7e-e1fa97625018" time="1366112554450" ignored="false" />
     <file path="/auth_view.php" changelist="9bbcb247-976b-4e05-ad7e-e1fa97625018" time="1366112922785" ignored="false" />
     <file path="/master_view.php" changelist="9bbcb247-976b-4e05-ad7e-e1fa97625018" time="1366185913406" ignored="false" />
+    <file path="/.gitignore" changelist="9bbcb247-976b-4e05-ad7e-e1fa97625018" time="1366187972444" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +123,7 @@
         <option value="$PROJECT_DIR$/classes/database.php" />
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/classes/Request.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -314,7 +312,11 @@
       <created>1366183598439</created>
       <updated>1366183598439</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add default controller. Add redirect function.">
+      <created>1366187922367</created>
+      <updated>1366187922367</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers>
       <PivotalTracker shared="false" url="http://www.pivotaltracker.com">
         <option name="APIKey" value="469a81d54f83911a09154bbf20247ace" />
@@ -395,7 +397,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add default controller. Add redirect function." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -416,18 +418,12 @@
     <MESSAGE value="Added a lot of things" />
     <MESSAGE value="Add controller check to index.php. Create user class." />
     <MESSAGE value="Changes" />
+    <MESSAGE value="Add default controller. Add redirect function." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classes/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="50" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="50" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0">
@@ -522,6 +518,13 @@
     <entry file="file://$PROJECT_DIR$/classes/Request.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="74" selection-start="563" selection-end="563" vertical-scroll-proportion="-11.586206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
