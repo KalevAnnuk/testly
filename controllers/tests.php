@@ -4,7 +4,8 @@ class tests
 
 	public $requires_auth = TRUE;
 
-	function index(){
-		
+	function index()
+	{
+
 	}
 }
