@@ -12,7 +12,8 @@ class Request
 	{
 		if (isset($_SERVER['PATH_INFO'])) {
 			if ($path_info = explode('/', $_SERVER['PATH_INFO'])) { //remove first number of exploded array
-				array_shift($path_info); // Kustutab 1. liikme ja reastab liikmed uuesti.
+				// Kustutab 1. liikme ja reastab liikmed uuesti.
+				array_shift($path_info);
 				//Kontrollitakse, kas PATH_INFO 1. liige on olemas, siis antud classi controlleri omaduse väärtuseks saab
 				//PATH_INFO  massivi esimene liige. Juhul kui pole esimest liiget, pannakse controllerile väärtus welcome
 				$this->controller = isset($path_info[0]) ? array_shift($path_info) : 'welcome';

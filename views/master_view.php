@@ -22,7 +22,14 @@
 	<script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
 	<style>
 		body{
-			padding-top:1000px;
+			padding-top:80px;
+		}
+		body, html{
+			background:url('<?=BASE_URL?>/assets/img/metal2.jpg');
+			height:100%;
+		}
+		table.table-bordered tr{
+			background-color: #f9f9f9;
 		}
 	</style>
 </head>

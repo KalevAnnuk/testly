@@ -15,6 +15,15 @@ function q($sql, $debug = FALSE)
 	}
 }
 
+function get_all($sql)
+{
+	$q = mysql_query($sql) or mysql_error();
+	while (($result[]=mysql_fetch_assoc($q)) || array_pop($result)){
+		;
+	}
+	return $result;
+}
+
 // meetod get_one kutsutatakse välja näiteks auth.php-s. Kus antakse parameetriks $sql(päring).
 function get_one($sql, $debug = FALSE)
 {
@@ -34,3 +43,4 @@ function get_one($sql, $debug = FALSE)
 	//juhul tagastame NULL -i
 	return is_array($result) && count($result) > 0 ? $result[0] : NULL;
 }
+
