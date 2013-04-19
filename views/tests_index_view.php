@@ -16,8 +16,9 @@
 			<td><?=substr($test['date'],0,10)?></td>
 			<td>
 				<i class= "icon-pencil"></i>
-				<a href="<?=BASE_URL?>tests/remove/<?=$test['test_id']?>">Kustuta</a>
-				<i class= "icon-trash"></i>
+				<a href="#" onclick="if(!confirm('Oled kindel?')) return false;
+				remove_test_ajax(<?=$test['test_id']?>); return false">
+				<i class= "icon-trash"></i>Kustuta</a>
 			</td>
 		</tr>
 	<? endforeach; endif ?>
