@@ -65,7 +65,7 @@
 				</div>
 			</div>
 			<div id="type_id_3" class="answer-template">
-				<label>Sisesta vastuse varjandid ja märgi ära õiged</label>
+				<label>Sisesta vastuse variandid ja märgi ära õiged</label>
 
 				<div id="multiple-response-answer-option">
 					<div class="answer-option">
@@ -87,7 +87,7 @@
 				</div>
 			</div>
 			<div id="type_id_4">
-				<label>Sisesta võimaliked vastuse varjandid (Üks vastus ühte kasti)</label>
+				<label>Sisesta võimaliked vastuse variandid (Üks vastus ühte kasti)</label>
 				<div id="fill-in-the-blanke-answer-option">
 					<div class="answer-option">
 						<input type="checkbox" name="fitb.correct" checked="checked" disabled="true">
