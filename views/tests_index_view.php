@@ -15,12 +15,14 @@
 			<td><?=$test['username']?></td>
 			<td><?=substr($test['date'], 0, 10)?></td>
 			<td>
-				<a href="<?=BASE_URL?>tests/edit/<?= $test['test_id'] ?>">
+				<a href="<?= BASE_URL ?>tests/edit/<?= $test['test_id'] ?>">Vaata
 					<i class="icon-pencil"></i>
 				</a>
-				<a href="#" onclick="if(!confirm('Oled kindel?')) return false;
-					remove_test_ajax(<?= $test['test_id'] ?>); return false">
-					<i class="icon-trash"></i>Kustuta</a>
+				<?if (! empty($status) && $status == 'teacher'): ?>
+					<a href="#" onclick="if(!confirm('Oled kindel?')) return false;
+						remove_test_ajax(<?= $test['test_id'] ?>); return false">
+						<i class="icon-trash"></i>Kustuta</a>
+				<? endif?>
 			</td>
 		</tr>
 	<? endforeach; endif ?>
