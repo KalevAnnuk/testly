@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css"/>
 <script>
-	$(function () {
+	$(function() {
 		$("#tabs").tabs();
 	});
 </script>
@@ -14,13 +14,13 @@
 	<div id="tabs-1">
 		<form method="post">
 			<label>Küsimuse nimi</label>
-			<input type="text" name="name" value="<?= $test['name'] ?>">
+			<input type="text" name="name" value="<?=$test['name'] ?>">
 			<label>Sissejuhatus</label>
 			<textarea name="introduction"><?=$test['introduction']?></textarea>
 			<label>Kokkuvõte</label>
 			<textarea name="conclusion"><?=$test['conclusion']?></textarea>
 			<label>Passcode</label>
-			<input type="text" name="passcode" value="<?= $test['passcode'] ?>">
+			<input type="text" name="passcode" value="<?=$test['passcode'] ?>">
 		</form>
 	</div>
 	<div id="tabs-2">
@@ -42,7 +42,7 @@
 				<input type="radio" name="tf.correct" value="1">
 				<textarea name="answer.1">False</textarea>
 			</div>
-			<div id="type_id_2">
+			<div id="type_id_2" class="answer-template">
 				<label>Sisesta vastuse variandid ja märgi ära õige</label>
 
 				<div id="multiple-choice-options">
@@ -86,7 +86,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="type_id_4">
+			<div id="type_id_4" class="answer-template">
 				<label>Sisesta võimaliked vastuse variandid (Üks vastus ühte kasti)</label>
 				<div id="fill-in-the-blanke-answer-option">
 					<div class="answer-option">
@@ -112,4 +112,3 @@
 			vitae lectus hendrerit hendrerit.</p>
 	</div>
 </div>
- 
