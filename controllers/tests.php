@@ -31,8 +31,25 @@ class tests
 		global $request;
 		$this->scripts[] = 'test_add_edit.js';
 		$id=$request->params[0];
-		$test=get_all("SELECT * FROM test NATURAL JOIN question WHERE test_id='$id'");
+		$test=get_all("SELECT * FROM test WHERE test_id='$id'");
+		$question=get_all("SELECT question_text FROM question WHERE test_id='$id'");
 		$test=$test[0];
+		$question=isset($question[0])?$question[0]:array('question_text'=>'');
+		require 'views/master_view.php';
+	}
+
+	function add(){
+		global $request;
+		$this->scripts[] = 'test_add_edit.js';
+		$test=array(
+			'test_id' =>'',
+			'name' =>'',
+			'introduction' =>'',
+			'conclusion' =>'',
+			'passcode' =>'',
+			'question_text' =>'',
+
+		);
 		require 'views/master_view.php';
 	}
 }
